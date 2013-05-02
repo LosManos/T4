@@ -1,0 +1,59 @@
+<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+using System;
+
+namespace Examples
+{
+	public class ExampleClass
+	{
+#region Enums
+
+<#
+	foreach (Enum myEnum in this.GetNames())   
+	{
+#>
+		public enum <#= myEnum.Name #>
+		{
+		<#
+		string items = string.Join(",\n\t\t\t", myEnum.Items );
+		#>
+	<#= items #>
+		}
+
+<# } #>
+#endregion //	Enums
+	}
+}
+<#+
+	internal class Enum{
+		internal string Name{get;set;}
+		internal IList<string> Items{get;set;}
+	}
+
+	private List<Enum> GetNames()
+	{
+		List<Enum> result = new List<Enum>(); 
+		XmlDocument doc = new XmlDocument();
+		doc.Load( @"C:\DATA\PROJEKT\T4\T4\EnumDescription.xml");
+		foreach( XmlElement enumNode in doc.SelectNodes( "/Root/Enum")){
+			var enumName = enumNode.Attributes["Name"].InnerText;
+			List<string> items = new List<string>();
+			foreach (XmlNode node in enumNode.SelectNodes("Element"))
+			{
+				items.Add( node.Attributes["Name"].InnerText);
+			}
+				result.Add(
+					new Enum{
+						Name = enumName, 
+						Items = items
+					}
+				);
+		}
+
+		return result;
+	}
+#>

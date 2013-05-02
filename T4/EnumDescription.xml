@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<Enum Name="Race">
+		<Element Name="Troll"/>
+		<Element Name="Elf"/>
+		<Element Name="MasterChief"/>
+	</Enum>
+	<Enum Name="Weapon">
+		<Element Name="Shark"/>
+		<Element Name="With"/>
+		<Element Name="Lasers"/>
+	</Enum>
+</Root>
