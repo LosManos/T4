@@ -87,6 +87,7 @@
     <Compile Include="Models\StorEj_QA.dbo.Tillsynsarende.cs" />
     <Compile Include="Models\StorEj_QA.dbo.Tillsynsplanering.cs" />
     <Compile Include="Models\StorEj_QA.dbo.Uppdragstyp.cs" />
+    <Compile Include="PetaPocoExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyEnums.cs">
@@ -98,6 +99,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ST4bby.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Talk\Template1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Template1.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +127,10 @@
     <None Include="ST4bby.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ST4bby.cs</LastGenOutput>
+    </None>
+    <None Include="Talk\Template1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Template1.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
