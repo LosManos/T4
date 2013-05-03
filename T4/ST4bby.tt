@@ -2,7 +2,9 @@
 <#@ Assembly Name="System.Core" #>
 <#@ Assembly Name="System.Data" #>
 <#@ Assembly Name="System.Xml" #>
-<#@ Assembly Name=v			
+<#@ Assembly Name="EnvDTE" #>
+<#@ Import Namespace="System.Collections.Generic" #>
+<#@ Import Namespace="System.Data.Common" #>
 <#@ Import Namespace="System.Data.SqlClient" #>
 <#@ import Namespace="System.Diagnostics" #>
 <#@ import Namespace="System.IO" #>

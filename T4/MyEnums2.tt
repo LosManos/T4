@@ -4,25 +4,30 @@
 <#@ import namespace="System.Xml" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="System.IO" #>
-namespace Examples
-{
-	public class Enums
-	{
 <#
+WriteLine( "namespace Examples2" );
+WriteLine("{");
+PushIndent("\t");
+WriteLine("public class Enums");
+WriteLine("{");
+PushIndent( "\t");
 	foreach (Enum myEnum in this.GetNames())   
 	{
-#>
-		public enum <#= myEnum.Name #>
-		{
-		<#
+		WriteLine( "public enum " + myEnum.Name );
+		WriteLine( "{" );
+		PushIndent( "\t" );
 		string items = string.Join(",\n\t\t\t", myEnum.Items );
-		#>
-	<#= items #>
-		}
-<# } #>
+		WriteLine( items );
+		PopIndent();
+	WriteLine( "}" );
 	}
-}
+PopIndent();
+WriteLine( "}");
+PopIndent();
+WriteLine( "}");
+#>
 <#+
+
 	internal class Enum{
 		internal string Name{get;set;}
 		internal IList<string> Items{get;set;}

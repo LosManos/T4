@@ -1,4 +1,4 @@
-namespace Examples
+namespace Examples2
 {
 	public class Enums
 	{
