@@ -1,0 +1,14 @@
+----L;sning 1----
+<#
+	foreach (Enum myEnum in this.GetNames())   
+	{
+#>
+		public enum <#= myEnum.Name #>
+		{
+		<#
+		string items = string.Join(",\n\t\t\t", myEnum.Items );
+		#>
+	<#= items #>
+		}
+
+<# } #>
