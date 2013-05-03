@@ -4,7 +4,7 @@
 <#@ Import Namespace="System.Data.SqlClient" #>
 <#@ output extension=".cs" #>
 <#
-	var connectionString = "Data Source=.\\mssqlserver2012;Initial Catalog=StorEj_QA;Integrated Security=SSPI;";
+	var connectionString = "Data Source=.\\mssqlserver2012;Initial Catalog=TrueCowTime;Integrated Security=SSPI;";
 	WriteLine( "// conn string=" + connectionString);
 	WriteLine("");
 

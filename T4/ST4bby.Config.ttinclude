@@ -13,7 +13,7 @@
     // Required settings:
     string NameSpaceName                = @"MySt4bbyNamespace";
     string ServerName                   = @".\mssqlserver2012";
-    string DatabaseName                 = @"StorEj_QA";
+    string DatabaseName                 = @"TrueCowTime";
 
     // If you want to use sql authentication fill out these two variables...
     string SqlAuth_Username             = @"";

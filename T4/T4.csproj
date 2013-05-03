@@ -48,62 +48,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AllTables.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TrueCowTime.dbo.Project.cs" />
+    <Compile Include="Models\TrueCowTime.dbo.Timeslot.cs" />
+    <Compile Include="MyEnums2.cs">
+      <DependentUpon>MyEnums2.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Models\Generated\Database.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PetaPoco.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.AkutArende.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Alarm.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Anvandare2.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Anvandare_Old.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Arende.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Arendelogg.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Arendestatus.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Bestallning.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Bolag.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Distrikt.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.dtproperties.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Grupp.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Hyresgast.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Hyresgastattribut.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Import_Batch.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Import_FranTxt.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Import_Hyresgast.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Import_JmfHyresgast.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Import_JmfOmrade.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Import_Omrade.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Installning.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.InstallningDatatyp.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Logg.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Meddelande.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Omrade.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.RelOmradeAnvandare.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.RelRollAnvandare.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Roll.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Storningstyp.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Tidlogg.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Tillsynsarende.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Tillsynsplanering.cs" />
-    <Compile Include="Models\StorEj_QA.dbo.Uppdragstyp.cs" />
     <Compile Include="PetaPocoExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MyEnums.cs">
+    <Compile Include="MyEnums1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MyEnums.tt</DependentUpon>
+      <DependentUpon>MyEnums1.tt</DependentUpon>
     </Compile>
     <Compile Include="ST4bby.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ST4bby.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Talk\Template1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Template1.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -112,15 +81,19 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AllTables.cs</LastGenOutput>
     </None>
+    <None Include="MyEnums2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MyEnums2.cs</LastGenOutput>
+    </None>
     <None Include="Models\Generated\Database.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Database.cs</LastGenOutput>
     </None>
     <None Include="Models\Generated\PetaPoco.Core.ttinclude" />
     <None Include="Models\Generated\PetaPoco.Generator.ttinclude" />
-    <None Include="MyEnums.tt">
+    <None Include="MyEnums1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MyEnums.cs</LastGenOutput>
+      <LastGenOutput>MyEnums1.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="ST4bby.Config.ttinclude" />
@@ -128,10 +101,9 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ST4bby.cs</LastGenOutput>
     </None>
-    <None Include="Talk\Template1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Template1.cs</LastGenOutput>
-    </None>
+    <None Include="Talk\1 Me, myself and I.md" />
+    <None Include="Talk\2 The 2 or 4 necessary links to start.md" />
+    <None Include="Talk\3 The 4 %28I left one out%29 brackets plus 2 write ways.md" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -140,7 +112,10 @@
     <Content Include="EnumDescription.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Talk\4 Iteration example 1.txt" />
+    <Content Include="Talk\5 Iteration example 2.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
