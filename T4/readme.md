@@ -1,0 +1,1 @@
+﻿# Detta 'r min presentation p[ OPKoKo 13.1
