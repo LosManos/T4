@@ -96,7 +96,6 @@
       <LastGenOutput>MyEnums1.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <None Include="readme.md" />
     <None Include="ST4bby.Config.ttinclude" />
     <None Include="ST4bby.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
